@@ -1,0 +1,34 @@
+Solución que imprima el costo de un pedido de un artículo del cual se tiene la descripción, la cantidad que se requiere y el precio unitario. 
+Si la cantidad pedida esexactamente 10 unidades o 20 unidades, se hace un descuento de 15%; caso contrario se descuenta el 10%
+
+1.Inicio
+2.Costo_Articulo, d[0,n]
+3.Cantidad_requerida, d[0,n]
+4.Precio_unitario, d[0,n]
+5.Descuento1, d[0,n]
+6.Porcentaje1, d[0,n]
+7.Porcentaje2, d[0,n]
+7.Porcentaje1 <-- 15
+7.Porcentaje2, <-- 10
+
+8.Escribir "Ingrese el costo del articulo"
+9.Lea costo del articulo
+
+10.Escribir "Ingresa la cantidad que requiera del artículo"
+11.Lea la cantidad requerida del articulo
+
+12.Escribir "Ingrese el precio unitario del artículo"
+13.Lea precio unitario del artículo
+
+14.Costo_Articulo --> (Cantidadrequerida*PrecioUnitario)
+15.Si Cantidad_requerida == 10 OR 20 entonces
+       //Vt - 100%
+       //X  - 15%
+16.    Descuento <-- (porcentaje * Costo_Articulo)/100
+17.    Costo_Articulo <-- Costo_Articulo - descuento
+18.    De lo Contrario 
+       Descuento2<-- (porcentaje2 * Costo_Articulo)/100
+       Costo_Articulo <-- Costo_Articulo - descuento2
+18. Fin si
+19.Escribir "El valor total a pagar es: " + Costo_Articulo
+20.Fin

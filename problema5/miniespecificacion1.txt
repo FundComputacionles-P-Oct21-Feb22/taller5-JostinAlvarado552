@@ -1,0 +1,39 @@
+Se debe generar un algoritmo y miniespecificación que permita calcular y mostrar el valor total a pagar mensual de servicios básicos de una persona. Los servicios básicos son: agua, telefono. Si la persona es menor a 20 años se descuenta el 20% del total mensual. 
+Para calcular el costo mensual a pagar el agua, se debe ingresar el número de litros de agua consumidos en el mes y el costo de cada litro de agua. Para calcular el costo del teléfono, se debe ingresar el número de minutos gastados en el mes y el costo de cada minuto.
+1. Inicio
+2. ValortotalAgua[0,n]
+3. ValortoalTelefono[0,n]
+4. porcentaje -> 20
+5. descuento [0,n]
+6. litrosdeaguaconsumidos[0,n]
+7. costoporlitro[0,n]
+8. minutosenelmes[0,n]
+9. costoporminuto[0,n]
+10.ValortotalMensual[0,n]
+11.Edad[0,n]
+
+12.Escriba "Ingrese su edad"
+13.Lea Edad
+14.Escriba "Ingrese los litros de agua consumidos en el mes"
+15.Lea litrosdeaguaconsumidos
+16.Escriba "Ingrese el costo por litro"
+17.Lea costoporlitro
+
+18.Escriba "Ingrese los minutos consumidos en el mes"
+19.Lea minutosenelmes
+20.Escriba "Ingrese el costo por minuto de la telefonia"
+21.Lea costoporminuto
+
+
+22.Valortotalagua -> (costoporlitro*litrosdeaguaconsumidos)
+23.Valortotaltelefono -> (minutosenelmes*costoporminuto)
+24.ValortotalMensual -> (Valortotalagua+Valortotaltelefono)
+
+14.Si edad>20
+      //Vt->100
+      //% -> 20
+      descuento-> (ValortotalMensual * porcentaje)/100
+      ValortotalMensual -> ValortotalMensual - descuento
+15.Fin Si
+16.Presentar mensaje en pantalla: ("El valor total a pagar es: %.2f",ValortotalMensual)
+Fin

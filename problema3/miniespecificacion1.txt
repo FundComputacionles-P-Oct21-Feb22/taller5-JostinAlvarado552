@@ -1,0 +1,16 @@
+1.Inicio
+2.gradosCentigrados, d[0,n]
+3.gradosFarenheit, d[0,n]
+4.gradosKelvin, d[0,n]
+5.Escribir "Ingresar grados Centigrados"
+7.Leer gradosCentigrados
+8.Si  gradosCentigrados >= 0 && <= 100
+9.    gradosFarenhit <- 9/5 * gradosCentigrados + 32
+10.   gradosKelvin <- gradosCentigrados + 273.15
+11.   Por lo contrario
+12.   Escribir que los datos no son validos
+11.Fin si
+12.Escribir "La temperatura en grados centigrados es: " + gradosCentigrados +
+ " La temperatura en grados farenheit es: " + gradosFarenheit +
+" La temperatura en gradosKelvin es: " + gradosKelvin
+Fin
